@@ -1,0 +1,28 @@
+# Global for all
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Node.js backend
+/backend/node_modules/
+/backend/.env
+/backend/npm-debug.log
+/backend/yarn-error.log
+
+# Docker volumes and configs
+pgdata/
+**/docker-entrypoint-initdb.d/*~
+
+# Frontend (HTML statique)
+# (pas de node_modules si pas de JS buildé)
+
+# VSCode & IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+
+**/Dockerfile*
+**/docker-compose.yml*
