@@ -21,8 +21,8 @@ jobs:
 
       - name: Construction de l'image Docker
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/mini-blog-backend:latest ./backend
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/image-backend:latest ./backend
 
       - name: Push de l'image sur Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/mini-blog-backend:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/image-backend:latest
