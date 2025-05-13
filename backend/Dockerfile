@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . .
 
-COPY wait-for-it.sh /wait-for-it.sh
-
 EXPOSE ${API_PORT}
 
-CMD ["/wait-for-it.sh", "db:5432", "--", "npm", "start"]
+CMD ["npm", "start"]
