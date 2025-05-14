@@ -24,3 +24,5 @@ else
   echo "❌ Fichier introuvable : $DB_PASSWORD_FILE"
   exit 1
 fi
+
+exec npm start
